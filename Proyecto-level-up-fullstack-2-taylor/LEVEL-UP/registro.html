@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor">
+            <h2>Registro</h2>
+            <form>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+                <input type="number" id="edad" placeholder="Ingresa tu fecha de nacimiento">
+                <input type="email" id="correo" placeholder="Ingresa tu correo">
+                <input type="password" id="contraseña1" placeholder="Ingresa tu contraseña">
+                <input type="password" id="contraseña2" placeholder="Ingresa nuevamente tu contraseña">
+                <button type="submit" onclick="guardar()">Guardar</button>
+            </form>
+        </div>
+    </div>
+    <script src="JS/registro.js"></script>
+</body>
+</html>
