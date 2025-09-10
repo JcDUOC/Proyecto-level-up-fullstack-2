@@ -1,14 +1,21 @@
-function guardar(){
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let fecha = document.getElementById("edad").value;
-    let edad = document.getElementById("edad").value;
-if (isNaN(edad) || edad <= 0) {
-alert("Por favor ingresa una edad válida");
-} if(isNaN(edad)|| edad < 18){
+function validar(){
+    let correo = document.getElementById("correo").value;
+    let contraseña = document.getElementById("contraseña1").value;
+    let regex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    const correoAdmin = "admin@dominio.com";
+    const contraseñaAdmin = "admin123";
 
-}
-else {
-alert("Edad registrada: " + edad);
-}
+    if (correo ==""){
+        alert("correo erroneo por favor ingrese bien el correo ")
+    }else if(contraseña == ""){
+        alert("por ravor ingrese su contraseña")
+    }else if (!regex.test(correo)){
+        alert("Correo inválido");
+    }else if (correo === correoAdmin && contraseña === contraseñaAdmin){
+        alert("bienvenido administrador")
+        window.location.href="administrador.html"
+    }else if(correo != correoAdmin && contraseña != contraseñaAdmin){
+        alert("bienvenido usuario")
+        window.location.href="pagina.html"
+    }
 }

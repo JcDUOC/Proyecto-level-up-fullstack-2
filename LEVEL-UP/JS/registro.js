@@ -7,6 +7,9 @@ function guardar(){
     let contraseña1= document.getElementById("contraseña1").value;
     let contraseña2= document.getElementById("contraseña2").value;
 
+
+    let administrador
+    let contraseña
     if (nombre === "") {
         alert("Por favor ingrese un nombre");
     } else if (apellido === "") {
@@ -25,8 +28,9 @@ function guardar(){
     else if(contraseña1 =! contraseña2){
         alert("tu contraseña es erronea intentalo otra vez")
     }
-     else {
+    else {
         alert("el usuario fue guardado con exito")
         console.log("El usuario se ha guardado con éxito");
+        window.location.href="pagina.html"
     }
 }
