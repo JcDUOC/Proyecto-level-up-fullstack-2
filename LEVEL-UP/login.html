@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<html lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
-<header class="navbar">
-    <div class="logo">
-        <img src="IMG/logo1.png" alt="Logo de la Empresa">
-    </div>
-    <a href="javascript:history.back()" class="volver">Volver</a>
-</header>
+    <header class="navbar">
+        <div class="logo">
+            <a href="pagina.html"><img src="IMG/Adobe Express - file.png" alt="pagina inicial" ></a>
+        </div>
+        <a href="javascript:history.back()" class="volver" alt="">Volver</a>
+    </header>
     <div class="contenedor-principal">
         <div class="contenedor">
             <h1>Inicio de Sesión</h1>
-            <form>
+            <form id="F">
                 <input type="email" id="correo" placeholder="Ingresa tu correo">
                 <input type="password" id="contraseña1" placeholder="Ingresa tu contraseña">
-                <button type="submit" onclick="validar()">Validar</button>
+                <button type="submit">Validar</button>
             </form>
         </div>
     </div>
