@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>productos level-up</title>
+    <link rel="stylesheet" href="CSS/productos.css">
 </head>
 <body>
 
@@ -15,13 +16,34 @@
         </table>
     </div>
 
-    <div>
-        <input type="text" placeholder= "nombre producto"> 
-        <button> Buscar</button>  <br>
-        <h1>Productos</h1>
-    </div>
-
+   
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <input type="text" placeholder= "nombre producto"> 
+                    <button> Buscar</button>  <br>
+                    <h1>Productos</h1>
+                </div>
+                
+            </td>
+            <td id = "cart_shop">
+                <img  src="image/marketcar.jpg" alt=""  height="100">
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id = "lista_productos"></div>
+            </td>
+        </tr>
+        
+    </table>
     
+    <script src="JS/productos.js"></script>
+    <script src = "JS/productos_logica.js"  ></script>
+
+
     
 </body>
 </html> 
