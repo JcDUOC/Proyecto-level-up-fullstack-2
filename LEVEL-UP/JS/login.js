@@ -6,8 +6,11 @@ function validar(e){
     let contraseña = document.getElementById("contraseña1").value;
     const correoAdmin = "admin@dominio.com";
     const contraseñaAdmin = "admin123";
-
-    if (correo === correoAdmin && contraseña === contraseñaAdmin){
+    if(correo==""){
+        alert ("por favor ingrese su correo")
+    }else if(contraseña==""){
+        alert("por favor ingrese su contrasena")
+    }else if (correo === correoAdmin && contraseña === contraseñaAdmin){
         alert("¡Bienvenido, administrador!");
         window.location.href = "administrador.html";
     } else {
