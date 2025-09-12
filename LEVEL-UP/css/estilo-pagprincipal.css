@@ -1,0 +1,204 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+/* Barra superior */
+.top-bar {
+  text-align: right;
+  padding: 0.5rem 2rem;
+  background: #111;
+  font-size: 0.9rem;
+}
+
+.top-bar a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+.top-bar a:hover {
+  color: #39FF14;
+}
+
+/* Header */
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #1E90FF;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #1E90FF;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #39FF14;
+}
+
+.cart {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #1E90FF20, #39FF1420);
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-text h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #39FF14;
+}
+
+.hero-text p {
+  margin: 1rem 0;
+  color: #ddd;
+}
+
+.btn-hero {
+  background: #1E90FF;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-hero:hover {
+  background: #39FF14;
+  color: #000;
+}
+
+.hero-img img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Productos */
+main {
+  padding: 2rem;
+}
+
+main h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #1E90FF;
+  text-align: center;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.producto {
+  border: 1px solid #1E90FF;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background: #111;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  border-color: #39FF14;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.producto h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.producto p {
+  color: #39FF14;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #1E90FF;
+}
+
+footer a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #39FF14;
+}
+
+.footer-social span {
+  font-size: 1.5rem;
+  margin: 0 0.3rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  border: 1px solid #1E90FF;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+
+.newsletter button {
+  background: #39FF14;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background: #1E90FF;
+  color: #fff;
+}
