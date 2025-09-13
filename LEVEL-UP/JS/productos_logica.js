@@ -9,12 +9,12 @@ function mostrar_productos(){
 
     productos.forEach(element => {
         producto = document.createElement("div")
-        costo = "$" + element["titulo"]
+        costo = "$" + element["nombre"]
         producto.classList.add("producto")
         producto.innerHTML = `
-            <p class = "titulo"><strong> ${element["titulo"]}</strong> </p> <br>
-            <p class = "costo">${element["costo"]}</p> <br>
-            <button onclick="ver_detalle_prod(${element["id"]})" >añadir al carrito</button>
+            <p class = "titulo"><strong> ${element["nombre"]}</strong> </p> <br>
+            <p class = "costo">${element["precio"]}</p> <br>
+            <button onclick="ver_detalle_prod('${element["codigo"]}')" >añadir al carrito</button>
 
         `
         lista_product.appendChild(producto)
@@ -31,8 +31,8 @@ function mostrar_productos(){
 
 }
 
-function ver_detalle_prod(id){
-    sessionStorage.setItem('id_producto', id)
+function ver_detalle_prod(codigo){
+    sessionStorage.setItem("id", codigo)
     window.location.href = "detalle_producto.html"
 }
 
