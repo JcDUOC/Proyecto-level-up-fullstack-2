@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/login.css">
+    <title>Formulario de Registro</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
     <header class="navbar">
@@ -29,28 +30,32 @@
             <a href="modificarProducto.html">modificar producor</a>
             <span>|</span>
             <a href="mostrarProducto.html">moctrar producto</a>
-            
         </nav>
         <a href="javascript:history.back()" class="volver">Volver</a>
     </header>
     <div class="contenedor-principal">
         <div class="contenedor">
-            <h2>bienvenido administrador que accion desea realidar</h2>
-            <div class="contenedor-acciones">
-                <div class="contenedor-usuario">
-                    <button type="button" onclick="btn_crearUsuario()">crear usuario</button>
-                    <button type="button" onclick="btn_modificarUsuario()">modificar usuario</button>
-                    <button type="button" onclick="btn_mostrarUsuario()">mostrar usuario</button>
-                </div>
-                <div class="contenedor-producto">
-                    <button type="button" onclick="btn_crearProducto()">crear producto</button>
-                    <button type="button" onclick="btn_modificarProducto()">modificar producto</button>
-                    <button type="button" onclick="btn_mostrarProducto()">mostrar producto</button>
-                </div>
-            </div>
+            <h2>Crear usuario nuevo</h2>
+            <form>
+                <label >NOMBRE</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                <label >APELLIDO</label>
+                <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+                <label >EDAD</label>
+                <input type="number" id="edad" placeholder="Ingresa tu fecha de nacimiento">
+                <label >CORREO</label>
+                <input type="email" id="correo" placeholder="Ingresa tu correo">
+                <label >CONTRASEÑA</label>
+                <input type="password" id="contraseña1" placeholder="Ingresa tu contraseña">
+                <label >VERIFICAR CONTRASEÑA</label>
+                <input type="password" id="contraseña2" placeholder="Ingresa nuevamente tu contraseña">
+                <label >TELEFONO</label>
+                <input type="number" id="numero" placeholder="(opcional)Ingrese su numero de telefono">
+
+                <button type="submit" onclick="guardar()">Guardar</button>
+            </form>
         </div>
     </div>
-    <script src="JS/admin.js"></script>
-
+    <script src="JS/registro.js"></script>
 </body>
 </html>

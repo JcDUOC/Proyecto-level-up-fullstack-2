@@ -60,7 +60,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color: #000000;
+    background-color: grey;
     position: fixed;
     top: 0;
     width: 100%;
@@ -116,17 +116,10 @@ body {
     color: #39FF14;
 }
 .nav-links span {
-    color: #D3D3D3; 
-    margin: 0 5px;
-}
-.cart-icon {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     color: #D3D3D3;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: color 0.3s ease;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+
 }
 .cart-icon:hover {
     color: #1E90FF;
@@ -177,7 +170,9 @@ body {
     border-top-right-radius: 5px;
     text-align: center;
 }
-.contenedor label {
+.contenedor label,
+.contenedor h2,
+.contenedor p {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
