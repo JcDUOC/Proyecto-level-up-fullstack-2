@@ -1,7 +1,11 @@
+if(sessionStorage.getItem("kart") == null){
+    sessionStorage.setItem("kart", JSON.stringify([]))
+    sessionStorage.setItem("k_cant", JSON.stringify([]))
+}
+ 
 
   
-  
-alert("entrando")
+alert(null)
 function mostrar_productos(){
     lista_product = document.getElementById("lista_productos")
 
@@ -12,10 +16,17 @@ function mostrar_productos(){
         costo = "$" + element["nombre"]
         producto.classList.add("producto")
         producto.innerHTML = `
-            <p class = "titulo"><strong> ${element["nombre"]}</strong> </p> <br>
-            <p class = "costo">${element["precio"]}</p> <br>
-            <button onclick="ver_detalle_prod('${element["codigo"]}')" >añadir al carrito</button>
-
+            
+                <div class="card">
+                    <img src="${element["urlImagen1"]}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">${element["nombre"]}</h5>
+                    <p class="card-text">${element["precio"]}</p>
+                    </div>
+                    <div class="card-footer">
+                        <button onclick="ver_detalle_prod('${element["codigo"]}')">añadir al carrito</button>
+                    </div>
+                </div>
         `
         lista_product.appendChild(producto)
 

@@ -17,13 +17,11 @@
     </style>
 </head>
 <body>
-    <div>
-        <table>
-            <tr>
-                <td><h1>Level-up productos </td> <td><img src="image/marketcar.jpg" alt=""  height="40"></td> </h1> 
-            </tr>
-        </table>
+    <div id = "contenedor-nav-up">
+        
     </div>
+
+    <script  src = "JS/encabezado.js"></script>
 
     <div class = "contenedor_info">
         <div id="contenedor-imgs">
@@ -35,24 +33,17 @@
                     
                 </tr>
 
-                <tr>
-                    <td>
-                    <img src="image/tecladogamer1.webp" alt="" class = "select_image">
-                    <img src="image/tecladogamer1.webp" alt=""   class = "select_image">
-                    <img src="image/tecladoimagen2.jpg" alt=""   class = "select_image">
-                    </td>
-                </tr>
             </table>
         </div>
 
         <div class = "info_producto">
-                <span><h3 class="detalle_1linea" id = "nombre_prod" style= "text-align: left;">Nombre_producto</h3> <h3 class="detalle_1linea" style = "text-align: right;">costo</h3> </span>
-                <h6 class="detalle_1linea">Categoria:</h6> <p class="detalle_1linea">categoria</p>
+                <span><h3 class="detalle_1linea" id = "nombre_prod" >Nombre_producto</h3> <h3 id="det_cost" class="detalle_1linea">costo</h3> </span>
+                <h6 class="detalle_1linea">Categoria:</h6> <p class="detalle_1linea" id ="det_cat">categoria</p>
                 <hr>
-                <p></p>
+                <p id = "descripcion_det"></p>
                 <hr>
-                <span> <p class="detalle_1linea">Cantidad</p>  <input type="text"  class="detalle_1linea"></span>
-                <span style = "justify-content: center;"><button style = "width: 90%; height:40px; margin-top:60px;  "> agregar al carrito</button> </span>
+                <span> <p class="detalle_1linea">Cantidad</p>  <input id = "in_cant" type="number"  class="detalle_1linea"></span>
+                <span class = "linea_items_center"><button onclick = "agregar_carrito()" style = "width: 90%; height:40px; margin-top:60px;  "> agregar al carrito</button> </span>
 
                 <hr>
         </div>
@@ -62,9 +53,11 @@
 
    <br> <br> 
 
+   <h5 id = "no-prod"></h5>
    <h6>Productos relacionados</h6>
+   
 
-   <div class = "imgs-relaci">
+   <div id = "prods_rela" class = "imgs-relaci">
 
 
    </div>
@@ -73,11 +66,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 
-    <script src="JS/productos.js">
-            alert("estoy det");
-    </script>
+    <script src="JS/productos.js"> </script>
 
-    <script src="JS/detalle_producto.js"> </script>
+    <script  src="JS/detalle_producto.js"> </script>
+
+
+    
 
     
 </body>
