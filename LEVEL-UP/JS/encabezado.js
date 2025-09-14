@@ -1,6 +1,6 @@
 function encabezado_comprador(){
-    let encabezado = document.getElementById("contenedor-nav-up")
-    
+    let encabezadoDiv = document.getElementById("contenedor-nav-up")
+    let encabezado = document.createElement("header")
     let kart = "image/marketkar.png" 
     let productos = "productos.html"
 
@@ -15,6 +15,8 @@ function encabezado_comprador(){
 
         
     `
+
+    encabezadoDiv.appendChild(encabezado)
 
    
 }

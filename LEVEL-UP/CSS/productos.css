@@ -108,8 +108,13 @@
 
 #contenedor-nav-up tr{
     max-height: 100%;
+    background-color: #1E90FF;
     
 
+}
+
+#contenedor-nav-up a {
+    color: white;
 }
 
 
@@ -146,5 +151,17 @@ td.carrito_ir img, a{
    
 
 }
+
+.cont_form_prod{
+    width: 60%;
+    margin: 10%
+
+}
+
+#imagen-principal{
+    width: 50%;
+}
+
+
 
 

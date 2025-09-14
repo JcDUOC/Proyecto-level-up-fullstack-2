@@ -16,7 +16,7 @@ function mostrar_productos(){
                     <p class="card-text">${element["precio"]}</p>
                     </div>
                     <div class="card-footer">
-                        <button onclick="ver_detalle_prod('${element["codigo"]}')">añadir al carrito</button>
+                        <button onclick="actualizar_producto('${element["codigo"]}')">Editar</button>
                     </div>
                 </div>
         `
@@ -33,3 +33,13 @@ function mostrar_productos(){
 
 
 }
+
+function actualizar_producto(codigo){
+    sessionStorage.setItem("id_actualizar", codigo)
+    window.location.href = "actualizar_producto.html"
+}
+
+
+
+mostrar_productos()
+
