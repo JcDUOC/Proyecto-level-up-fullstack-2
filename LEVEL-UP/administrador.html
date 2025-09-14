@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="IMG/Adobe Express - file.png" alt="Logo de la Empresa">
+        </div>
+        <nav class="nav-links">
+            <a href="administrador.html">inicio</a>
+            <span>|</span>
+            <a href="crearUsuario.html">crear usuario</a>
+            <span>|</span>
+            <a href="modificarUsuario.html">modificar usuario</a>
+            <span>|</span>
+            <a href="mostrarUsuario.html">mostrar usuarios</a>
+            <span>|</span>
+            <a href="crearProducto.html">crear producto</a>
+            <span>|</span>
+            <a href="modificarProducto.html">modificar producor</a>
+            <span>|</span>
+            <a href="mostrarProducto.html">moctrar producto</a>
+            
+        </nav>
+        <a href="javascript:history.back()" class="volver">Volver</a>
+    </header>
+    <div class="contenedor-principal">
+        <div class="contenedor">
+            <h2>bienvenido administrador que accion desea realidar</h2>
+            <div class="contenedor-acciones">
+                <div class="contenedor-usuario">
+                    <button type="button" onclick="btn_crearUsuario()">crear usuario</button>
+                    <button type="button" onclick="btn_modificarUsuario()">modificar usuario</button>
+                    <button type="button" onclick="btn_mostrarUsuario()">mostrar usuario</button>
+                </div>
+                <div class="contenedor-producto">
+                    <button type="button" onclick="btn_crearProducto()">crear producto</button>
+                    <button type="button" onclick="btn_modificarProducto()">modificar producto</button>
+                    <button type="button" onclick="btn_mostrarProducto()">mostrar producto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/admin.js"></script>
+
+</body>
+</html>
