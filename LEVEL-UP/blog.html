@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/login.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level-Up Gamer | Blogs</title>
+  <link rel="stylesheet" href="../css/estilo_lvlup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header class="navbar">
-        <div class="logo">
-            <img src="IMG/Adobe Express - file.png" alt="Logo de la Empresa">
-        </div>
-        <nav class="nav-links">
-            <a href="pagina.html">Home</a>
-            <span>|</span>
-            <a href="productos.html">Productos</a>
-            <span>|</span>
-            <a href="nosotros.html">Nosotros</a>
-            <span>|</span>
-            <a href="blog.html">Blogs</a>
-            <span>|</span>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    <a href="javascript:history.back()" class="volver">Volver</a>
-</header>
+  
+  <header>
+    <div class="logo">🎮 Level-Up Gamer</div>
+    <nav>
+      <ul>
+        <li><a href="pagina.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blog.html" class="active">Blogs</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="cart">🛒 Cart (0)</div>
+  </header>
+  
+  <main class="blogs-section">
+    <h1>Noticias Importantes</h1>
+
+    <section class="blog-row">
+      <div class="blog-text">
+        <h2>Top 5 accesorios para mejorar tu setup gamer</h2>
+        <p>Descubre los accesorios esenciales que todo gamer necesita para llevar su experiencia al siguiente nivel.</p>
+        <a href="blog1.html" class="btn-blog">Ver noticia</a>
+      </div>
+      <div class="blog-img">
+        <img src="../img/accesorios-gamer_1.webp" alt="Accesorios gamer" width="350">
+      </div>
+    </section>
+
+    <section class="blog-row">
+      <div class="blog-text">
+        <h2>Novedades de la Switch 2 en 2025</h2>
+        <p>Te contamos las últimas actualizaciones y juegos que están revolucionando la consola de Nintendo.</p>
+        <a href="blog2.html" class="btn-blog">Ver noticia</a>
+      </div>
+      <div class="blog-img">
+        <img src="../img/nintendo juegos.webp" alt="NSW2" width="350">
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="footer-links">
+      <p><strong>Level-Up Gamer</strong></p>
+      <a href="#">Category X</a> | <a href="#">Category Y</a> | <a href="#">Category Z</a>
+    </div>
+    <div class="footer-social">
+      <p>Síguenos:</p>
+      <span>📘</span> <span>🐦</span> <span>📸</span>
+    </div>
+    <div class="newsletter">
+      <p>Suscríbete a nuestro Newsletter</p>
+      <input type="email" placeholder="Ingresa tu correo">
+      <button>Subscribe</button>
+    </div>
+  </footer>
 </body>
 </html>

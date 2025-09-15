@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level-Up Gamer | Home</title>
+  <link rel="stylesheet" href="../css/estilo_lvlup.css">
+  <script defer src="../js/pagprincipal.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="IMG/Adobe Express - file.png" alt="Logo de la Empresa">
-        </div>
-        <nav class="nav-links">
-            <a href="pagina.html">Home</a>
-            <span>|</span>
-            <a href="productos.html">Productos</a>
-            <span>|</span>
-            <a href="nosotros.html">Nosotros</a>
-            <span>|</span>
-            <a href="blog.html">Blogs</a>
-            <span>|</span>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    <a href="javascript:history.back()" class="volver">Volver</a>
-</header>
-            <a href="login.html">Iniciar sesion</a>
-            <span>|</span>
-            <a href="registro.html">Registrarse</a>
-            <span>|</span>
-    <h1>hola</h1>
+  <div class="top-bar">
+    <div class="auth-links">
+      <a href="#">Iniciar sesión</a> | <a href="#">Registrar usuario</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">🎮 Level-Up Gamer</div>
+    <nav>
+      <ul>
+        <li><a href="pagina.html">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="cart">🛒 Carrito (<span id="cart-count">0</span>)</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Tienda Online</h1>
+      <p>Encuentra lo último en consolas, accesorios y tecnología gamer. Compra fácil y recibe en todo Chile.</p>
+      <button class="btn-hero">Ver productos</button>
+    </div>
+    <div class="hero-img">
+      <img width="200" src="../img/LVL-UP Gamer.webp" alt="Imagen Tienda Gamer">
+    </div>
+  </section>
+
+  <main>
+    <h2>Productos destacados</h2>
+    <div class="productos" id="productos-container"></div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <p><strong>Level-Up Gamer</strong></p>
+      <a href="#">Categoría X</a> | <a href="#">Categoría Y</a> | <a href="#">Categoría Z</a>
+    </div>
+    <div class="footer-social">
+      <p>Síguenos:</p>
+      <span>📘</span> <span>🐦</span> <span>📸</span>
+    </div>
+    <div class="newsletter">
+      <p>Suscríbete a nuestro Newsletter</p>
+      <input type="email" placeholder="Ingresa tu correo">
+      <button>Subscribe</button>
+    </div>
+  </footer>
 </body>
 </html>
