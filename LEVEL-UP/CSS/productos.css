@@ -1,0 +1,167 @@
+.producto{
+    display: inline-block;
+    margin: 20px;
+    
+    height: 15%;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.producto > .titulo{
+    height: 25%;
+}
+.costo{
+    vertical-align: bottom
+}
+
+.producto > button{
+     display: inline-block
+}
+
+.producto > img{
+    max-width: 100%;
+    width: 80%;
+}
+
+#cart_shop{
+    padding: 30px;
+    align-content: center;
+}
+
+.select_image{
+    width: 70px;
+    height: 70px; 
+    margin: 15px;
+
+}
+
+#im_selec_prod{
+    
+    width:90%; 
+    height:470px;
+    margin: 5%
+
+}
+
+
+.imgs_producto{
+    width: 100%;
+}
+
+.imgs_producto  td{
+  border:  1px solid black; 
+  width: 100% ;/* Añade un borde negro sólido de 1px a cada celda */
+}
+
+
+.contenedor_info {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap:2%;
+  margin: 2.5%;
+
+}
+
+.contenedor_info2{
+   display: grid;
+   grid-template-columns: 60% 30%;
+   
+}
+
+.info_producto{
+    text-align:left;
+    width: 100%;
+    margin: 0%;
+    
+
+    
+}
+
+#contenedor-imgs{
+    width: 100%;
+    margin: 0px;
+}
+
+.detalle_1linea{
+    display: inline-block;
+}
+
+.kart{
+    max-height: 100%;
+    height: auto;
+    width: 40%;
+    
+}
+
+.imgs-relaci{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+    display: flex;
+}
+
+#contenedor-nav-up{
+    width: 100%;
+    height : 100px;
+}
+
+#contenedor-nav-up tr{
+    max-height: 100%;
+    background-color: #1E90FF;
+    
+
+}
+
+#contenedor-nav-up a {
+    color: white;
+}
+
+
+
+
+
+.name_com_up{
+    width: 30%;
+}
+
+.botonL_2columna{
+    width: 90%;
+     height:40px; 
+     margin-top:60px;  
+}
+
+.linea_items_center{
+    display: flex;
+    justify-content: center;
+}
+
+td.carrito_ir{
+    display:-ms-inline-flexbox;
+    width: 15%;
+    place-items: center;
+
+}
+
+td.carrito_ir img, a{
+    display:inline;
+   padding-top: 5%;
+   vertical-align:middle;
+   padding-bottom: 5%;
+   
+
+}
+
+.cont_form_prod{
+    width: 60%;
+    margin: 10%
+
+}
+
+#imagen-principal{
+    width: 50%;
+}
+
+
+
+
