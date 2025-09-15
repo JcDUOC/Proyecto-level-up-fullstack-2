@@ -13,5 +13,5 @@ function btn_mostrarUsuario() {
 window.location.href="mostrarUsuario.html"
 }
 function btn_mostrarProducto() {
-window.location.href="mostrarProducto.html"
+window.location.href="productos_administrador.html"
 }

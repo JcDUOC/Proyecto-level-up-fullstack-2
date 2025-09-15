@@ -152,7 +152,11 @@ td.carrito_ir img, a{
 
 .cont_form_prod{
     width: 60%;
-    margin: 10%
+    margin: 10%;
+    align-items: center;
+    display: flexbox;
+    
+    
 
 }
 

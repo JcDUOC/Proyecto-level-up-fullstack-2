@@ -47,7 +47,7 @@ function mostrarCarro(){
         let costo = producto["precio"] * cantidad
         let id_k = "p" + i
         item.classList.add("contenedor")
-
+        item.style = "width: 80%; height: auto; "
         item.id = id_k
 
         item.innerHTML = `
