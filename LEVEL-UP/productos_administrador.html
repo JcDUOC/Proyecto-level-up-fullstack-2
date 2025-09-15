@@ -5,54 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>productos level-up</title>
     <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-
-    
- 
-    <div id = "contenedor-nav-up" >
-        
-    </div>
-
-    <script  src = "JS/encabezado.js"></script>
-
+    <header class="navbar">
+        <div class="logo">
+            <img src="IMG/Adobe Express - file.png" alt="Logo de la Empresa">
+        </div>
+        <nav class="nav-links">
+            <a href="administrador.html">inicio</a>
+            <span>|</span>
+            <a href="crearUsuario.html">crear usuario</a>
+            <span>|</span>
+            <a href="modificarUsuario.html">modificar usuario</a>
+            <span>|</span>
+            <a href="mostrarUsuario.html">mostrar usuarios</a>
+            <span>|</span>
+            <a href="nuevo_producto.html">crear producto</a>
+            <span>|</span>
+            <a href="actualizar_producto.html">modificar producor</a>
+            <span>|</span>
+            <a href="productos_administrador.html">moctrar producto</a>
+        </nav>
+        <a href="javascript:history.back()" class="volver">Volver</a>
+    </header>
     <br> <br>
-
-   
-     
-   
     <table>
         <tr>
             <td>
                 <div>
-                    <input type="text" placeholder= "nombre producto"> 
+                    <input type="text" placeholder= "nombre producto">
                     <button> Buscar</button>  <br>
                     <h1>Productos</h1>
                 </div>
-                
-            
         </tr>
         <tr>
             <td>
                 <div id = "lista_productos" class="card-group">
-                    
                 </div>
-               
-
-                
-                
             </td>
         </tr>
-        
     </table>
-    
     <script src="JS/productos.js"></script>
     <script src = "JS/administrador_producto.js"  ></script>
-
-    
-
-
-    
 </body>
-</html> 
+</html>

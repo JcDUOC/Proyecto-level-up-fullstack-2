@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="IMG/Adobe Express - file.png" alt="Logo de la Empresa" href="pagina.html">
+        <header class="navbar">
+        <div class="logo" href="pagina.html">
+            <img src="IMG/Adobe Express - file.png" alt="Logo de la Empresa">
         </div>
         <nav class="nav-links">
             <a href="pagina.html">Home</a>
@@ -27,8 +23,8 @@
             <span>|</span>
             <a href="contacto.html">Contacto</a>
         </nav>
-    <a href="javascript:history.back()" class="volver">Volver</a>
-</header>
+        <a href="javascript:history.back()" class="volver">Volver</a>
+    </header>
     <div class="contenedor-principal">
         <div class="contenedor">
             <h2>Registro</h2>
@@ -47,7 +43,6 @@
                 <input type="password" id="contraseña2" placeholder="Ingresa nuevamente tu contraseña">
                 <label >TELEFONO</label>
                 <input type="number" id="numero" placeholder="(opcional)Ingrese su numero de telefono">
-
                 <button type="submit" onclick="guardar()">Guardar</button>
             </form>
         </div>
