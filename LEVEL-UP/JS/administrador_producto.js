@@ -9,7 +9,7 @@ function mostrar_productos(){
         producto.classList.add("producto")
         producto.innerHTML = `
             
-                <div class="card">
+                <div class="card contenedor" style = "width: 100%">
                     <img src="${element["urlImagen1"]}" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">${element["nombre"]}</h5>

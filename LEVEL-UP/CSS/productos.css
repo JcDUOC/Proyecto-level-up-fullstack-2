@@ -50,7 +50,7 @@
 }
 
 .imgs_producto  td{
-  border:  1px solid black; 
+  border:  1px #1E90FF; 
   width: 100% ;/* Añade un borde negro sólido de 1px a cada celda */
 }
 
@@ -113,9 +113,7 @@
 
 }
 
-#contenedor-nav-up a {
-    color: white;
-}
+
 
 
 
@@ -162,6 +160,8 @@ td.carrito_ir img, a{
     width: 50%;
 }
 
-
+body{
+    background-color: black;
+}
 
 

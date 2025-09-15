@@ -46,6 +46,7 @@ function mostrarCarro(){
         let cantidad = cant_car[i]
         let costo = producto["precio"] * cantidad
         let id_k = "p" + i
+        item.classList.add("contenedor")
 
         item.id = id_k
 

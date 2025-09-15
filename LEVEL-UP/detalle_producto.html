@@ -6,13 +6,14 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <style>
         span{
             justify-content: space-between;
             display: flex;
             width: 100%;
             display: flex;
-            border: 1px solid #ccc;
+            
         }
     </style>
 </head>
@@ -34,16 +35,16 @@
             <span>|</span>
             <a href="actualizar_producto.html">modificar producor</a>
             <span>|</span>
-            <a href="productos_administrador.html">moctrar producto</a>
+            <a href="productos_administrador.html">mostrar producto</a>
         </nav>
         <a href="javascript:history.back()" class="volver">Volver</a>
     </header>
 
-    <script  src = "JS/encabezado.js"></script>
+    
 
     <div class = "contenedor_info">
         <div id="contenedor-imgs">
-            <table class = "imgs_producto">
+            <table class = "imgs_producto contenedor" style="width: 80%;">
                 <tr>
                     <td>
                     <img id = "im_selec_prod"  src="image/tecladogamer1.webp" alt="" style="background-color: black;">
